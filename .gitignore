@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Large CAD raw binaries (>100MB exceeds GitHub push limits)
+bujji cad model-20261013T043927Z-1-001/
+*.SLDPRT
+*.sldprt
+*.obj
+*.fbx
+*.stl
