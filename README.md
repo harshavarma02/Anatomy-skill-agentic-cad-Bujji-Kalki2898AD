@@ -1,30 +1,35 @@
-# Bujji, opened up
+<h1 align="center">Bujji, opened up</h1>
 
 <div align="center">
 
 [![Payload](https://img.shields.io/badge/Payload-306_KB_Standalone-0ea5e9.svg?style=flat-square)](./bujji-opened-up.html)
-[![Tech](https://img.shields.io/badge/Tech-React_19_+_Pure_SVG-6366f1.svg?style=flat-square)](#how-it-works)
+[![Tech](https://img.shields.io/badge/Tech-React_19_+_Pure_SVG-6366f1.svg?style=flat-square)](#-how-it-works-stress-testing-the-anatomy-contract)
 [![Skill](https://img.shields.io/badge/Skill-Anatomy_by_@wheresryan22-10b981.svg?style=flat-square)](https://github.com/wheresryan22/anatomy)
 [![License](https://img.shields.io/badge/License-MIT-f59e0b.svg?style=flat-square)](./LICENSE)
 
 <br/>
 
-**An interactive, pure vector SVG cutaway of Bujji from *Kalki 2898 AD*.**  
-Modeled from real mechanical blueprints into code — running inside a zero-dependency, 306 KB standalone HTML file.
+**Stress-testing the viral Anatomy Skill ([@wheresryan22](https://github.com/wheresryan22)) on a real 6-tonne machine.**  
+*Translating Bujji from Kalki 2898 AD into an interactive, pure vector SVG cutaway — running inside a zero-dependency, 306 KB standalone HTML file.*
 
 <br/>
 
-[**⚡ Launch Standalone HTML**](./bujji-opened-up.html) &bull; [**📐 Subsystems**](#mechanical-subsystems) &bull; [**⚙️ How It Works**](#how-it-works) &bull; [**🚀 Quickstart**](#quickstart)
+[**⚡ Launch Standalone HTML**](./bujji-opened-up.html) &bull; [**📐 Subsystems**](#-mechanical-subsystems) &bull; [**⚙️ How It Works**](#-how-it-works-stress-testing-the-anatomy-contract) &bull; [**🚀 Quickstart**](#-quickstart)
 
 </div>
 
 ---
 
-## Real Machine vs. Vector Code
-
-Instead of generating a generic AI raster image with melted hubs and floating pipes, this project constructs Bujji as an **accurate mechanical assembly in pure code**.
+<h2 align="center">Real Machine vs. Pure Vector Code</h2>
 
 <div align="center">
+
+| Traditional Diagrams & GenAI | The Anatomy Skill (*This Project*) |
+| :--- | :--- |
+| **Mermaid / Flowcharts**: Abstract boxes and arrows that can't explain physical mechanisms. | **The object IS the explanation**: A functioning, code-driven mechanical machine you can inspect and manipulate. |
+| **Generative AI (Midjourney)**: Glossy concept art with melted axles, impossible bolt patterns, and zero code. | **Pure SVG Vector Geometry**: Every bearing, wishbone, and truss mapped to exact axonometric 3D coordinates. |
+
+<br/>
 
 | 🏭 Real Vehicle (*Mahindra × Jayem Automotives*) | 📐 Pure Vector SVG Recreation (*This Project*) |
 | :---: | :---: |
@@ -35,11 +40,13 @@ Instead of generating a generic AI raster image with melted hubs and floating pi
 
 <br/>
 
-### Interactive Split-Slider Cutaway
-
-Drag the divider line across the vehicle to inspect how the **finished aerodynamic composite armor** mates with the **unskinned mechanical spaceframe and high-voltage powertrain**:
+<h3 align="center">Interactive Split-Slider Cutaway</h3>
 
 <div align="center">
+
+Drag the central division line horizontally to peel between the **finished aerodynamic composite armor** and the **unskinned mechanical spaceframe**:
+
+<br/>
 
 <img src="./assets/vector_bujji_unwrapped.png" alt="Bujji Full Unwrapped Spaceframe View" width="980" />
 
@@ -49,16 +56,16 @@ Drag the divider line across the vehicle to inspect how the **finished aerodynam
 
 ---
 
-## Mechanical Subsystems
+<h2 align="center">Mechanical Subsystems</h2>
 
 <div align="center">
 
-| Hubless Front Running Gear | Spaceframe Outrigger Torque Bridge |
+| Hubless Front Running Gear & Bearings | Spaceframe Outrigger Torque Bridge |
 | :---: | :---: |
 | <img src="./assets/vector_hubless_wheel_internals.png" alt="Hubless Wheel Internals" width="480" /> | <img src="./assets/vector_chassis_outrigger_bridge.png" alt="Chassis Bridge" width="480" /> |
 | *20 taper roller bearings • Slotted carbon-ceramic rotor • 16-pole copper stator • Dual opposing 4-piston calipers* | *DOM steel spaceframe • Cantilever torque box bridge • Front wishbone pivot mount • Structural roll cage* |
 
-| Pilot Cockpit Capsule | Rear Powertrain & Steering Swingarm |
+| Pilot Cockpit Capsule & Controls | Rear Powertrain & Steering Swingarm |
 | :---: | :---: |
 | <img src="./assets/vector_cockpit_wheel_zoom.png" alt="Cockpit Zoom" width="480" /> | <img src="./assets/vector_rear_powertrain_zoom.png" alt="Rear Powertrain Zoom" width="480" /> |
 | *FIA tubular roll cage • Contoured pilot bucket seat • Steer-by-wire yoke column • Central holographic HUD pod* | *Spherical drive hub • Dual progressive coilover dampers • High-pressure hydraulic lines • Dual induction motors* |
@@ -67,28 +74,29 @@ Drag the divider line across the vehicle to inspect how the **finished aerodynam
 
 ---
 
-## How It Works
+<h2 align="center">How It Works: Stress-Testing the Anatomy Contract</h2>
 
-This project follows the **Anatomy design contract** — treating vector code as an axonometric technical drawing engine:
+Most uses of the **Anatomy Skill** explain small mechanical components (locks, valves, pressure gauges). This project pushed the design contract to an entire multi-system automotive platform:
 
-* **True 2.5D Isometric Geometry**: All coordinates $(x, y, z)$ map deterministically to screen coordinates $(X, Y)$ at **$42^\circ$ azimuth** and **$30^\circ$ elevation**. No Three.js, no WebGL, no heavy 3D assets.
-* **4-Tone Directional Shading**: Every solid part (`slabOf`, cylinders, discs) uses a strict directional palette — top highlight, front face, cast shadow, and specular crease line — creating tangible physical mass in flat SVG.
-* **Topological Painter's Sorting**: Because SVG has no hardware $z$-buffer, all mechanical assemblies are sorted back-to-front: plinth shadow $\rightarrow$ port running gear $\rightarrow$ chassis spine & battery $\rightarrow$ cockpit seat $\rightarrow$ rear sphere $\rightarrow$ starboard body.
-* **Live Dynamic Conduit Animation**: The interactive throttle slider modulates CSS variables (`--ps`, `--d`) that control live animated SVG electron conduits in real time.
+1. **True 2.5D Isometric Geometry**: All 3D coordinates $(x, y, z)$ map deterministically to screen coordinates $(X, Y)$ at **$42^\circ$ azimuth** and **$30^\circ$ elevation**. No Three.js, no WebGL, no heavy 3D assets.
+2. **4-Tone Directional Shading**: Every solid part (`slabOf`, cylinders, discs) uses a strict directional palette — top highlight, front face, cast shadow, and specular crease line — producing tangible physical mass without raster blur.
+3. **Topological Depth Sorting**: Without a hardware $z$-buffer, all 26 subsystem assemblies are sorted back-to-front using Painter's algorithm to maintain watertight visual joints.
+4. **The Anatomy Technical Plate**: Structured inside the official Anatomy UI frame — with figure numbering, interactive hints, and a live telemetry readout card (`47 kWh • 9,800 Nm`) tied to a dynamic throttle regulator.
 
 ---
 
-## Quickstart
+<h2 align="center">Quickstart</h2>
+
+<div align="center">
 
 ### Option A: Instant Zero-Install View (Recommended)
 
-1. Clone or download this repo.
-2. Double-click **[`bujji-opened-up.html`](./bujji-opened-up.html)** in any modern web browser.
-3. Drag the slider to reveal the internal powertrain.
+Double-click **[`bujji-opened-up.html`](./bujji-opened-up.html)** in any modern web browser.  
+*306 KB • 0 network requests • 0 dependencies • Runs offline.*
 
-*306 KB • 0 network requests • 0 dependencies • Works offline.*
+</div>
 
-### Option B: Local Development
+### Option B: Local Development (React + Vite)
 
 ```bash
 # Clone repository
@@ -102,7 +110,7 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:3000` in your browser.
+Visit `http://localhost:3000` to interact with the hot-reloading dev server.
 
 To regenerate the standalone single-file HTML bundle:
 ```bash
@@ -111,7 +119,7 @@ npm run bundle
 
 ---
 
-## Repository Structure
+<h2 align="center">Repository Structure</h2>
 
 ```text
 .
@@ -127,11 +135,15 @@ npm run bundle
 
 ---
 
-## Credits & Acknowledgments
+<h2 align="center">Credits & Open Skills Ecosystem</h2>
 
-* **Anatomy Skill**: Built using the Anatomy design contract created by **Ryan** ([@wheresryan22](https://github.com/wheresryan22)).
-* **Bujji Original Vehicle**: Designed by **Nag Ashwin** & produced by **Vyjayanthi Movies** for *Kalki 2898 AD*.
-* **Real Engineering Build**: Manufactured in reality by **Mahindra Research Valley** & **Jayem Automotives**, with custom 34.5" tyres by **CEAT**.
+* **Anatomy Skill**: Created by **Ryan** ([@wheresryan22](https://github.com/wheresryan22)) — pioneering *"the object is the explanation"* vector movement for AI coding agents.
+  ```bash
+  # Install the Anatomy skill in Claude Code / Antigravity:
+  npx skills add wheresryan22/anatomy
+  ```
+* **Bujji Original Vehicle**: Conceived by director **Nag Ashwin** & produced by **Vyjayanthi Movies** for *Kalki 2898 AD*.
+* **Physical Engineering Prototype**: Built in reality by **Mahindra Research Valley** & **Jayem Automotives**, with custom 34.5" tyres by **CEAT**.
 
 ---
 
