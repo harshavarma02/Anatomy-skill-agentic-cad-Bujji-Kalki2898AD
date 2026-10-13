@@ -236,6 +236,7 @@ bun run build
 .
 ├── bujji-opened-up.html              # ⚡ Complete standalone zero-dependency build (306 KB)
 ├── assets/                          # 📸 High-resolution renders, CAD models & comparisons
+│   ├── cad_renders/                 # Orthographic CAD projections & technical renders
 │   ├── real_bujji_beauty.jpg        # Real promotional vehicle CAD beauty render
 │   ├── vector_bujji_cutaway.png     # Interactive split-slider master screenshot
 │   ├── vector_bujji_unwrapped.png   # Full unwrapped mechanical spaceframe view

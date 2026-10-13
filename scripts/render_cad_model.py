@@ -141,6 +141,8 @@ ax.axis('off')
 
 plt.title("Bujji CAD Model (version 3.2 v1.obj) - Exact 3/4 Isometric Projection (Azimuth 42°, Elevation 30°)", fontsize=14, fontfamily="monospace")
 plt.tight_layout()
-out_png = "cad_projected_iso.png"
+os.makedirs("assets/cad_renders", exist_ok=True)
+out_png = "assets/cad_renders/cad_projected_iso.png"
 plt.savefig(out_png, facecolor='#f4f5f7')
 print(f"Saved: {out_png}")
+

@@ -123,10 +123,12 @@ def interior_colors(name):
     else:
         return "#cbd5e1", "#64748b", 0.4
 
+os.makedirs("assets/cad_renders", exist_ok=True)
 print("Rendering Exterior CAD at Azimuth 42°, Elevation 30°...")
-render_scene("cad_exterior_iso.png", ["Body22", "Body19", "Body20", "Body21", "Body24", "Body25", "Body1", "Body2"], "Bujji CAD - Exterior Shell at Webpage Isometric Angle (Azimuth 42°, Elevation 30°)", exterior_colors)
+render_scene("assets/cad_renders/cad_exterior_iso.png", ["Body22", "Body19", "Body20", "Body21", "Body24", "Body25", "Body1", "Body2"], "Bujji CAD - Exterior Shell at Webpage Isometric Angle (Azimuth 42°, Elevation 30°)", exterior_colors)
 
 print("Rendering Mechanics CAD at Azimuth 42°, Elevation 30°...")
-render_scene("cad_mechanics_iso.png", ["Body1", "Body2", "Body13", "Body14", "Body15", "Body16", "Body19", "Body20", "Body21", "Body23", "Body26", "Body27"], "Bujji CAD - Internal Mechanics at Webpage Isometric Angle (Azimuth 42°, Elevation 30°)", interior_colors)
+render_scene("assets/cad_renders/cad_mechanics_iso.png", ["Body1", "Body2", "Body13", "Body14", "Body15", "Body16", "Body19", "Body20", "Body21", "Body23", "Body26", "Body27"], "Bujji CAD - Internal Mechanics at Webpage Isometric Angle (Azimuth 42°, Elevation 30°)", interior_colors)
 
 print("All CAD renders finished successfully.")
+

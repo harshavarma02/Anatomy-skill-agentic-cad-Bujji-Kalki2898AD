@@ -188,6 +188,8 @@ ax.axis('off')
 
 plt.title("Bujji CAD Decompiled - True Vector Feature Edges at Webpage Isometric Angle", fontsize=14, fontfamily="monospace")
 plt.tight_layout()
-out_png = "cad_technical_vector.png"
+os.makedirs("assets/cad_renders", exist_ok=True)
+out_png = "assets/cad_renders/cad_technical_vector.png"
 plt.savefig(out_png, facecolor='#f4f5f7')
 print(f"Saved: {out_png}")
+
