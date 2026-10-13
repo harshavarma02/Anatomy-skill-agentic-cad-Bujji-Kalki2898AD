@@ -1,6 +1,0 @@
-{
-  "name": "Bujji 3D - Kalki 2898 AD Vehicle Model & Anatomy",
-  "description": "Interactive, proportionally accurate 3D model and technical anatomy viewer of Bujji, the futuristic autonomous vehicle from Kalki 2898 AD.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
