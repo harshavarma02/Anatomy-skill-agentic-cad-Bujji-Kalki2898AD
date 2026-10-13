@@ -33,8 +33,9 @@
 
 | 🏭 Real Vehicle (*Mahindra × Jayem Automotives*) | 📐 Pure Vector SVG Recreation (*This Project*) |
 | :---: | :---: |
-| <img src="./assets/real_bujji_beauty.jpg" alt="Real Bujji Build" width="500" /> | <img src="./assets/vector_bujji_cutaway.png" alt="Pure Vector Code Cutaway" width="500" /> |
+| <img src="./assets/real_bujji_reference.jpg" alt="Real Bujji Build" width="500" /> | <img src="./assets/vector_bujji_cutaway.png" alt="Pure Vector Code Cutaway" width="500" /> |
 | *6,000 kg kerb weight • 6.075 m length • Dual Kirloskar motors (9,800 Nm) • 34.5" hubless front wheels built by Jayem & Mahindra* | *306 KB single-file HTML • 0 external dependencies • 120 FPS responsive vector • True $42^\circ$ axonometric projection* |
+
 
 </div>
 
