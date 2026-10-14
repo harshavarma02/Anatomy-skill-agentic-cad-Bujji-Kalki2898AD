@@ -29,8 +29,13 @@ const standalone = `<!doctype html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bujji, opened up // Kalki 2898 AD — Pure Anatomy Showcase</title>
-    <meta name="description" content="Pure Anatomy Skill Showcase: 3/4 isometric cutaway of Bujji's front drive with interactive unwrap divider and live throttle regulator." />
+    <title>Bujji: Agentic CAD Anatomy // Futuristic Autonomous Vehicle</title>
+    <meta name="description" content="100% Vector SVG CAD Anatomy of Bujji from Kalki 2898 AD. Interactive cutaway divider and live telemetry." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="alternate icon" href="favicon.ico" />
     <style>
       ${css}
     </style>
@@ -43,6 +48,15 @@ const standalone = `<!doctype html>
   </body>
 </html>`;
 
-const outPath = path.resolve(import.meta.dirname, "../bujji-opened-up.html");
-fs.writeFileSync(outPath, standalone);
-console.log("Successfully generated standalone file:", outPath, `(${standalone.length} bytes)`);
+const outPath1 = path.resolve(import.meta.dirname, "../bujji-opened-up.html");
+const outPath2 = path.resolve(import.meta.dirname, "../index.html");
+const outPath3 = path.resolve(import.meta.dirname, "../dist/index.html");
+
+fs.writeFileSync(outPath1, standalone);
+fs.writeFileSync(outPath2, standalone);
+fs.writeFileSync(outPath3, standalone);
+
+console.log("Successfully generated standalone files:");
+console.log("  ->", outPath1, `(${standalone.length} bytes)`);
+console.log("  ->", outPath2, `(${standalone.length} bytes)`);
+console.log("  ->", outPath3, `(${standalone.length} bytes)`);
