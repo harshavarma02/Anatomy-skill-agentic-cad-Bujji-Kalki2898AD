@@ -16,12 +16,21 @@ const files = fs.readdirSync(assetsDir);
 const cssFile = files.find((f) => f.endsWith(".css"));
 const jsFile = files.find((f) => f.endsWith(".js"));
 
-if (!cssFile || !jsFile) {
-  console.error("Could not find css or js file in dist/assets");
+if (!jsFile) {
+  console.error("Could not find js file in dist/assets");
   process.exit(1);
 }
 
-const css = fs.readFileSync(path.join(assetsDir, cssFile), "utf8");
+let css = "";
+if (cssFile) {
+  css = fs.readFileSync(path.join(assetsDir, cssFile), "utf8");
+} else {
+  const match = html.match(/<style[^>]*>([\s\S]*?)<\/style>/i);
+  if (match) {
+    css = match[1];
+  }
+}
+
 const js = fs.readFileSync(path.join(assetsDir, jsFile), "utf8");
 
 const standalone = `<!doctype html>
